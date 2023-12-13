@@ -25,13 +25,13 @@ class Product(models.Model):
     
 class VariationManager(models.Manager):
     def strength(self):
-        return super(VariationManager,self).filter(variation_category='strengh',is_active=True)
+        return super(VariationManager,self).filter(variation_category='strength',is_active=True)
     
     # def sizes(self):
     #     return super(VariationManager,self).filter(variation_category='size',is_active=True)
     
 variation_category_choice = (
-        ('strengh','strengh'),
+        ('strength','strength'),
     )
 
 class Variation(models.Model):
